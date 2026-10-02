@@ -175,7 +175,7 @@
 
     async function initPage() {
       try {
-        const [crewRes, actRes, statsRes] = await Promise.all([
+        const [crewRes] = await Promise.all([
           fetchSheetData(CREW_CSV_URL)
         ]);
 
