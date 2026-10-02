@@ -172,18 +172,14 @@
         });
       });
     }
-/*
+
     async function initPage() {
       try {
         const [crewRes, actRes, statsRes] = await Promise.all([
-          fetchSheetData(CREW_CSV_URL),
-          fetchSheetData(ACTIVITY_CSV_URL),
-          fetchSheetData(STATS_CSV_URL)
+          fetchSheetData(CREW_CSV_URL)
         ]);
 
         crewData = crewRes;
-        activityData = actRes;
-        statsData = statsRes;
 
         setupGenFilters();
         renderStats();
@@ -192,7 +188,7 @@
       } catch (error) {
         console.error("데이터 로드 실패:", error);
       }
-    }*/
+    }
 /*
     // 오른쪽 세로 사이드바 기수별 버튼 렌더링
     function setupGenFilters() {
